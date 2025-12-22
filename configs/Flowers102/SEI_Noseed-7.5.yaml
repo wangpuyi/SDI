@@ -1,0 +1,16 @@
+base_config: configs/Flowers102/base.yaml
+proj: Flowers102
+name: Flowers-noSeed-NoFilter-7.5
+
+data: 
+  base_dataset: Flowers102
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/Flower102
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/Flowers-Gaussian-7.5
+  # num_extra: "extra"
+  num_extra: "all"
+  filter: False
+  multiples: 20
+
+
+# model: resnet50_pretrained

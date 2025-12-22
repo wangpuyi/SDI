@@ -1,0 +1,12 @@
+base_config: configs/Flowers102/base.yaml
+proj: Flowers102
+name: Flowers-base
+
+data: 
+  base_dataset: Flowers102
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/Flower102
+  
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

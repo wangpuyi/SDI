@@ -1,0 +1,16 @@
+base_config: configs/IN100_sub/base.yaml
+proj: IN-100-sub
+name: IN-100-sub-Gaussian-2.0-5x
+
+data: 
+  base_dataset: IN100_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN100_sub
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/IN100sub-Gaussian-2.0-5x
+  num_extra: "all"
+  # num_extra: "extra"
+  filter: True
+  multiples: 5
+
+# hps:
+#   lr: 0.1

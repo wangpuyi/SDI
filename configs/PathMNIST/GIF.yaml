@@ -1,0 +1,17 @@
+base_config: configs/breastmnist/base.yaml
+proj: BreastMNIST
+name: BreastMNIST-GIF
+
+data: 
+  base_dataset: BreastMNIST
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/MedMnist/breastmnist_224
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/GIF/CUB_expansion
+  num_extra: "all"
+  # num_extra: 10000
+  filter: False
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

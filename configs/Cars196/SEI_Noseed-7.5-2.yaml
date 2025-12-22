@@ -1,0 +1,18 @@
+base_config: configs/Cars196/base.yaml
+proj: Cars196
+name: Cars196-class-Filter-NoSeed-7.5
+
+data: 
+  base_dataset: Cars196
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/StanfordCars/cars
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/Cars-Gaussian
+  # num_extra: "extra"
+  num_extra: "all"
+  filter: False
+  multiples: 40
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

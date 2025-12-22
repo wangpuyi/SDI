@@ -1,0 +1,19 @@
+base_config: configs/Cub2011/base.yaml
+proj: CUB
+name: CUB-randaug-20x
+
+data: 
+  base_dataset: Cub2011
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/CUB_200_2011
+  augmentation: randaug # cutout  gridmask  randaug
+
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/dataset/CUB_200_2011/train
+  num_extra: "extra"
+  filter: False
+  multiples: 20
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

@@ -1,0 +1,19 @@
+base_config: configs/DTD/base.yaml
+proj: DTD
+name: DTD-GIF
+
+data: 
+  base_dataset: DTD
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/dtd/dtd_split
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/GIF/DTD_expansion
+  # num_extra: "all"
+  num_extra: "extra"
+  filter: False
+  multiples: 5
+
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

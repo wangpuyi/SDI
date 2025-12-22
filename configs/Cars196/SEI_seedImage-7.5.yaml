@@ -1,0 +1,21 @@
+base_config: configs/Cars196/base.yaml
+proj: Cars196
+name: Cars196-class-filter-seedImage-7.5
+
+data: 
+  base_dataset: Cars196
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/StanfordCars/cars
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/Cars-Gaussian-Seed
+  num_extra: "extra"
+  # num_extra: "all"
+  filter: True
+  multiples: 20 # when num_extra is "extra"
+
+# hps:
+#   lr: 0.1
+
+filter:
+  negative_prompts: ["a photo of an object", "a photo of geometric shapes", "a photo", "an image", "a painting", "a cartoon of a car", "a photo of a person",]
+
+# model: resnet50_pretrained

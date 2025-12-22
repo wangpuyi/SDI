@@ -1,0 +1,18 @@
+base_config: configs/PETs/base.yaml
+proj: PETs
+name: PETs-Gaussian-unfiltered-2.0
+
+data: 
+  base_dataset: PETs
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/PETs
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/PETs-Gaussian-2.0
+  # num_extra: "all"
+  num_extra: "extra"
+  filter: False
+  multiples: 30 # when num_extra is "extra"
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

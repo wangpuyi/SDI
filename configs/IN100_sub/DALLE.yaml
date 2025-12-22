@@ -1,0 +1,11 @@
+base_config: configs/IN100_sub/base.yaml
+proj: IN-100-sub
+name: IN-100-sub-DALLE
+
+data: 
+  base_dataset: IN100_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN100_sub
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/DALLE2/IN100S
+  num_extra: "all"
+  filter: False

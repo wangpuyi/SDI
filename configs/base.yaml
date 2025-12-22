@@ -1,0 +1,62 @@
+seed: 0
+wandb_silent: false
+test: false
+proj: DiffusionAugmentation # wandb project name
+
+model: resnet50 # can change this to MLP if you want to LP CLIP
+finetune: false
+epochs: 100
+eval_only: false
+resume: false
+checkpoint_name: false
+
+data:
+  base_root: /mnt/hwfile/gveval/yangshuo/dataset
+  embedding_root: /grp01/cs_hszhao/cs002u03/output/SEI_filter/embeddings # precomputed clip embeddings
+  # embedding_root: null
+  batch: 128
+  augmentation: false # set to name of traditional augmentation method (cutmix, augmix, etc.)
+  filter: False # apply image filtering
+  extra_dataset: false # this is the dataset type for the augmented data (usually its Img2ImgDataset or BasicDataset)
+  extra_classes: false
+  extra_root: false # path to extra dataset
+  num_extra: extra # how much generated data to add. Can be 'extra' (how we do it in the paper), 'all', or an int 
+  class_balance: True # whether to balance the classes in the extra dataset, this is if you set num_extra to an int
+  extra_only: False
+  multiples: 1
+
+filter:
+  save_dir: /grp01/cs_hszhao/cs002u03/output/SEI_filter/filtering_results # where to save the results
+  filtered_path: false # path to npy file with filtered images idxs, this is if you want to use a different filtering method than the one we provide
+  model: ViT-L/14 # CLIP model for filtering
+  load: True # set this to true after you compute the embeddings once 
+  per_img: False # set this to true if you are doing an img2img method
+  checkpoint_name: 'ckpt-Cub2011-none-resnet50-0.pth' # checkpoint to use for confidence-based filtering
+
+hps:
+  lr: 0.01
+  weight_decay: 0.0001
+  lr_scheduler: cosine
+
+summarize: # for generating prompts
+  captions_path: false # path to captions file
+  prefix: 'a photo of a bird'
+
+# vicuna args
+cpu_offloading: false
+debug: false
+device: 'cuda'
+gptq_act_order: false
+gptq_ckpt: None
+gptq_groupsize: -1
+gptq_wbits: 16
+gpus: None
+load_8bit: false
+max_gpu_memory: '10GB'
+max_new_tokens: 512
+model_path: 'lmsys/vicuna-13b-v1.3'
+num_gpus: 4
+repetition_penalty: 1.0
+revision: 'main'
+temperature: 1.0
+message: 'hello, how are you?'

@@ -1,0 +1,19 @@
+base_config: configs/PathMNIST/base.yaml
+proj: PathMNIST
+name: Gaussian-2.0
+
+data: 
+  base_dataset: BreastMNIST
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/MedMnist/pathmnist_224
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/pathmnist_224-Gaussian-2.0
+  num_extra: "all"
+  # num_extra: "extra"
+  filter: False
+  multiple: 5
+
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

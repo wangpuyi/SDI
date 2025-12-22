@@ -1,0 +1,12 @@
+base_config: configs/Cars196/base.yaml
+proj: Cars196
+name: Cars-base
+
+data: 
+  base_dataset: Cars196
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/StanfordCars/cars
+  
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

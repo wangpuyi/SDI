@@ -1,0 +1,18 @@
+base_config: configs/Flowers102/base.yaml
+proj: Flowers102
+name: Flowers-Ablation-GMM2-5x
+
+data: 
+  base_dataset: Flowers102
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/Flower102
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/Flowers-GMM2-2.0-5x
+  # num_extra: "all"
+  num_extra: "extra"
+  filter: False
+  multiples: 5 # when num_extra is "extra"
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

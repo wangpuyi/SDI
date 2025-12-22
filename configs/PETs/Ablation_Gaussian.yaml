@@ -1,0 +1,18 @@
+base_config: configs/PETs/base.yaml
+proj: PETs
+name: PETs-Ablation-Gaussian-filtered
+
+data: 
+  base_dataset: PETs
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/PETs
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/PETs-Gaussian-10x-2.0
+  num_extra: "all"
+  # num_extra: "extra"
+  filter: True
+  multiples: 5 # when num_extra is "extra"
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

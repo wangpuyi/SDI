@@ -1,0 +1,7 @@
+base_config: configs/IN200_S/base.yaml
+proj: IN-200-sub
+name: IN-200-sub-base
+
+data: 
+  base_dataset: IN200_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN200_S

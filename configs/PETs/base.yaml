@@ -1,0 +1,12 @@
+base_config: configs/PETs/base.yaml
+proj: PETs
+name: PETs-base
+
+data: 
+  base_dataset: PETs
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/PETs
+  
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist-info/
+build/
+dist/
+
+# Envs
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Logs & outputs
+logs/
+output/
+outputs/
+runs/
+wandb/
+tensorboard/
+checkpoints/
+ckpt/
+*.ckpt
+*.pt
+*.pth
+
+# Large datasets / generated images
+generated/
+gen/
+samples/
+results/
+
+# HF / Diffusers cache
+.huggingface/

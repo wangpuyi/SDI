@@ -1,0 +1,18 @@
+base_config: configs/DTD/base.yaml
+proj: DTD
+name: DTD-Gaussian-7.5
+
+data: 
+  base_dataset: DTD
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/dtd/dtd_split
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/DTD-Gaussian-7.5
+  # num_extra: "extra"
+  num_extra: "all"
+  filter: False
+  multiples: 20
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

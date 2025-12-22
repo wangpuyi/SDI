@@ -1,0 +1,18 @@
+base_config: configs/IN200_S/base.yaml
+proj: IN-200-sub
+name: IN-200S-Ablation-GMM3-filtered
+
+data: 
+  base_dataset: IN200_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN200_S
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/IN200-sub-GMM3-2.0-1x
+  num_extra: "all"
+  # num_extra: "extra"
+  filter: True
+  multiples: 1 # when num_extra is "extra"
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

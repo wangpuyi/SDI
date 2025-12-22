@@ -1,0 +1,20 @@
+base_config: configs/IN200_S/base.yaml
+proj: IN-200-sub
+name: IN-200-sub-Gaussian-ratio-4
+
+data: 
+  base_dataset: IN200_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN200_S
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/IN200-sub-Gaussian-2.0
+  # num_extra: "all"
+  num_extra: "extra"
+  filter: True
+  multiples: 1
+
+filter_ratio: 0.25
+data_pt: /grp01/cs_hszhao/cs002u03/output/SEI_filter/embeddings/IN200_sub/IN-200-sub-Gaussian-2.0-filtered/aug_data.pt
+# 1:1.5  0.667
+# 1:2    0.5
+# 1:3    0.333
+# 1:4    0.25

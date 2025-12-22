@@ -1,0 +1,14 @@
+base_config: configs/PETs/base.yaml
+proj: PETs
+name: PETs-SD
+
+data: 
+  base_dataset: PETs
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/PETs
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SD1_5/PETs
+  num_extra: "all"
+  filter: False
+
+
+# model: resnet50_pretrained

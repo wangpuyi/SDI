@@ -1,0 +1,17 @@
+base_config: configs/Cub2011/base.yaml
+proj: CUB
+name: CUB-SD
+
+data: 
+  base_dataset: Cub2011
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/CUB_200_2011
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SD1_5/CUB
+  num_extra: "all"
+  # num_extra: 10000
+  filter: False
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

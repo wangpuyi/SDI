@@ -1,0 +1,16 @@
+base_config: configs/Cars196/base.yaml
+proj: Cars196
+name: Cars-GIF
+
+data: 
+  base_dataset: Cars196
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/StanfordCars/cars
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/GIF/car_expansion/car_stable_diffusion_scale50_strength0.9_CLIP_optimization_up0.8_5x
+  num_extra: "all"
+  filter: False
+
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

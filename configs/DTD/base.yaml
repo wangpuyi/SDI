@@ -1,0 +1,10 @@
+base_config: configs/DTD/base.yaml
+proj: DTD
+name: DTD-base
+
+data: 
+  base_dataset: DTD
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/dtd/dtd_split
+
+
+# model: resnet50_pretrained

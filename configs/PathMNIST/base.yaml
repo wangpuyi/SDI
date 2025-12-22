@@ -1,0 +1,12 @@
+base_config: configs/PathMNIST/base.yaml
+proj: PathMNIST
+name: PathMNIST-base
+
+data: 
+  base_dataset: BreastMNIST
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/MedMnist/pathmnist_224/val
+  
+# hps:
+#   lr: 0.1
+
+# model: resnet50_pretrained

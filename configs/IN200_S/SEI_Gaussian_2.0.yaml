@@ -1,0 +1,17 @@
+base_config: configs/IN200_S/base.yaml
+proj: IN-200-sub
+# name: IN-200-sub-Gaussian-2.0-nonfilter
+name: IN-200-sub-Gaussian-ratio-1.0
+
+data: 
+  base_dataset: IN200_sub
+  base_root: /grp01/cs_hszhao/cs002u03/dataset/IN200_S
+  extra_dataset: BasicDataset
+  extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/IN200-sub-Gaussian-2.0
+  # num_extra: "all"
+  num_extra: "extra"
+  filter: False
+  multiples: 1
+
+filter:
+  load: False

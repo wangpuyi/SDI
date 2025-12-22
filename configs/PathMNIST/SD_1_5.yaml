@@ -1,0 +1,17 @@
+base_config: configs/breastmnist/base.yaml
+proj: CUB
+name: CUB-SD
+
+data: 
+  base_dataset: Cub2011
+  base_root: /mnt/hwfile/gveval/yangshuo/dataset/Caltech-UCSD-Birds-200-2011
+  extra_dataset: BasicDataset
+  extra_root: /mnt/hwfile/gveval/yangshuo/output/SD1_5/CUB
+  num_extra: "all"
+  # num_extra: 10000
+  filter: False
+
+hps:
+  lr: 0.1
+
+# model: resnet50_pretrained

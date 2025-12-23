@@ -7,9 +7,9 @@ data:
   base_root: /grp01/cs_hszhao/cs002u03/dataset/dtd/dtd_split
   extra_dataset: BasicDataset
   extra_root: /grp01/cs_hszhao/cs002u03/output/SEI/DTD-Gaussian-2.0
-  num_extra: "extra"
-  # num_extra: "all"
-  filter: False
+  # num_extra: "extra"
+  num_extra: "all"
+  filter: True
   multiples: 5
 
 # hps:

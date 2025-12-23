@@ -17,7 +17,7 @@ conda activate py39
 python SEI_Generate.py \
     --guidance_scale=2.0 \
     --pt_root="/grp01/cs_hszhao/cs002u03/output/ProjTensor/DTD" \
-    --save_root="/grp01/cs_hszhao/cs002u03/output/SEI/DTD-GMM5-2.0-10x" \
+    --save_root="/grp01/cs_hszhao/cs002u03/output/SEI/DTD-Gaussian-2.0" \
     --data_root="/grp01/cs_hszhao/cs002u03/dataset/dtd/dtd_split/train" \
-    --expanded_number_per_sample=10 \
-    --sample_func="GMM5"
+    --expanded_number_per_sample=40 \
+    --sample_func="Gaussian"

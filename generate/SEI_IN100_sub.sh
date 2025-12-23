@@ -14,17 +14,9 @@ conda activate py39
 
 # 运行 Python 脚本，指定每个任务的 GPU ID
 python SEI_Generate.py \
-    --guidance_scale=7.5 \
+    --guidance_scale=2.0 \
     --pt_root="/grp01/cs_hszhao/cs002u03/output/ProjTensor/IN100_sub" \
-    --save_root="/grp01/cs_hszhao/cs002u03/output/SEI/IN100-sub-Gaussian-7.5" \
+    --save_root="/grp01/cs_hszhao/cs002u03/output/SEI/IN100-sub-Gaussian-2.0" \
     --data_root="/grp01/cs_hszhao/cs002u03/dataset/IN100_sub/train" \
-    --expanded_number_per_sample=2 \
+    --expanded_number_per_sample=10 \
     --sample_func="Gaussian"
-
-# python SEI_Generate.py \
-#     --guidance_scale=2.0 \
-#     --pt_root="/grp01/cs_hszhao/cs002u03/output/ProjTensor/IN100_sub" \
-#     --save_root="/grp01/cs_hszhao/cs002u03/output/SEI/IN100-sub-Gaussian-2.0" \
-#     --data_root="/grp01/cs_hszhao/cs002u03/dataset/IN100_sub/train" \
-#     --expanded_number_per_sample=2 \
-#     --sample_func="Gaussian"

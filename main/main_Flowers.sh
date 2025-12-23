@@ -17,7 +17,7 @@ source activate py39  # Activate your conda environment if needed
 # python main_DDP.py --config configs/Flowers102/GIF.yaml --port="16503"
 # python main_DDP.py --config configs/Flowers102/SEI_Noseed-7.5.yaml --port="16500"
 # python main_DDP.py --config configs/Flowers102/SEI_Noseed-2.0.yaml --port="16502"
-# python main_DDP.py --config configs/Flowers102/Ablation_Gaussian.yaml --port="16502"
+python main_DDP.py --config configs/Flowers102/Ablation_Gaussian.yaml --port="16502"
 # python main_DDP.py --config configs/Flowers102/Ablation_GMM3.yaml --port="16503"
 # python main_DDP.py --config configs/Flowers102/Ablation_GMM5.yaml --port="16504"
 # python main_DDP.py --config configs/Flowers102/aug.yaml --port="16508"

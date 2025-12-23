@@ -16,7 +16,7 @@ To use this codebase, the general workflow is as follows:
 2.  **Extract Features**: Extract semantic features from the original dataset.
 3.  **Sample & Generate**: Sample new image features based on the learned distribution and generate images using the sampled features.
 
-The following examples use the **CUB dataset** to demonstrate the workflow.
+The following examples use the **CUB dataset** to demonstrate the workflow. You can find commands of other datasets in `train`, `getEmbedding`, `generate`, and `main` files.
 
 ### 1. Prepare Dataset
 Please refer to the following guide to obtain the specific train/test splits for the dataset:
